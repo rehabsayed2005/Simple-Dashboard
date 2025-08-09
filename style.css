@@ -1,0 +1,171 @@
+*{
+    color:white;
+    padding:0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: rgba(0, 0, 0, 0.892);
+    display: flex;
+}
+
+
+
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow:hidden;
+    border:3px solid white;
+    flex-shrink: 0;
+}
+
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.profile h2{
+    font-size:25px;
+    text-transform: capitalize;
+}
+
+.menu:hover{
+    width: 260px;
+}
+.menu{
+    background: #123;
+    height:100vh;/*100 viewport =>the height of all screen*/
+    width:60px;
+    padding:20px;
+    overflow: hidden;
+    transition: .5s;
+    opacity: 0.9;
+}
+ul{
+    list-style: none;
+    position:relative;
+    height:95%;
+}
+ul li a{
+
+
+display:block;
+text-decoration:none;
+border-radius: 8px;
+padding:10px;
+margin: 10px 0;
+gap:40px;
+display: flex;
+align-items: center;
+transition: 0.5s;
+}
+
+ul li a:hover, .active{
+    background-color: #ffffff55;
+}
+
+.log-out{
+position:absolute;
+bottom: 0;
+width: 100%;
+}
+
+.log-out a{
+    background-color: #a00;
+}
+
+ul li a i{
+font-size: 30px;
+}
+/*===============================================================content=====================================================*/
+.content{
+   
+    width: 100%;
+}
+.title-info{
+
+    background-color: rgb(127, 157, 255);
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin:10px 0;
+    opacity: 0.6;
+}
+.data-info{
+    display: flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+    gap:10px;
+}
+.data-info .box{
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow:1;
+    border-radius: 8px;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.data-info .box:hover{
+
+    background-color: #ffffff55;
+}
+.data-info .box i{
+
+    font-size:40px;
+
+}
+.data-info  .box .data{
+    align-items: center;
+}
+
+.data-info .box .data span{
+    font-size: 30px;
+}
+.title-products{
+display: flex;
+justify-content: space-between;
+background-color: rgb(127, 157, 255);
+padding: 8px;
+margin:10px 0;
+border-radius: 8px;
+align-items: center;
+opacity: 0.6;
+}
+table{
+    width:100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td, th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color:rgb(127, 157, 255);
+      
+}
+td:hover{
+    background-color: #ffffff55;
+}
+.price,.count{
+    padding:6px;
+    border-radius: 6px;
+}
+.price{
+    background-color: green;
+}
+.count{
+    background-color: gold;
+    color:black;
+}
+tbody tr  td .products{font-size: 50px;}
