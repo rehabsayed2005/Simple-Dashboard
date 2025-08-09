@@ -40,7 +40,7 @@ body{
     background: #123;
     height:100vh;/*100 viewport =>the height of all screen*/
     width:60px;
-    padding:20px;
+    padding:22px;
     overflow: hidden;
     transition: .5s;
     opacity: 0.9;
